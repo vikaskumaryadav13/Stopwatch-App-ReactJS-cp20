@@ -1,0 +1,113 @@
+/* Write CSS here */
+.app-bg-container {
+  height: 100vh;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-sm-bg.png');
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .app-bg-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-lg-bg.png');
+  }
+}
+
+.stopwatch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 65px;
+}
+@media screen and (min-width: 992px) {
+  .stopwatch-container {
+    align-items: flex-start;
+    margin-left: 165px;
+  }
+}
+.stopwatch-heading {
+  font-family: 'Roboto';
+  font-size: 35px;
+  font-weight: 600;
+  color: #333333;
+}
+
+@media screen and (min-width: 992px) {
+  .stopwatch-heading {
+    font-size: 65px;
+  }
+}
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  width: 300px;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+}
+.timer {
+  display: flex;
+  align-items: center;
+}
+
+.timer-image {
+  margin-right: 10px;
+}
+
+.timer-heading {
+  font-family: 'Roboto';
+  font-size: 25px;
+  font-weight: 550;
+  color: #333333;
+}
+.stopwatch-timer {
+  font-family: 'Roboto';
+  font-size: 35px;
+  font-weight: 480;
+  color: #333333;
+  margin-top: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .stopwatch-timer {
+    font-size: 65px;
+  }
+}
+.timer-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.button {
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: 580;
+  border-radius: 4px;
+  padding-top: 3px;
+  color: #ffffff;
+  padding-bottom: 3px;
+  padding-left: 22px;
+  padding-right: 22px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+.start-button {
+  margin-right: 25px;
+  background-color: #1db05f;
+}
+.stop-button {
+  margin-right: 25px;
+  background-color: #ef0d36;
+}
+
+.reset-button {
+  background-color: #eaa800;
+}
